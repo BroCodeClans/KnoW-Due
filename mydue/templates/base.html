@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Expert &mdash; Onepage Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "home/fonts/icomoon/style.css" %}">
+
+    <link rel="stylesheet" href="{% static "home/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "home/css/jquery-ui.css" %}">
+    <link rel="stylesheet" href="{% static "home/css/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static "home/css/owl.theme.default.min.css" %}">
+    <link rel="stylesheet" href="{% static "home/css/owl.theme.default.min.css" %}">
+
+    <link rel="stylesheet" href="{% static "home/css/jquery.fancybox.min.css" %}">
+
+    <link rel="stylesheet" href="{% static "home/css/bootstrap-datepicker.css" %}">
+
+    <link rel="stylesheet" href="{% static "home/fonts/flaticon/font/flaticon.css" %}">
+
+    <link rel="stylesheet" href="{% static "home/css/aos.css" %}">
+
+    <link rel="stylesheet" href="{% static "home/css/style.css" %}">
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo"><a href="index.html" class="text-uppercase">Expert</a></div>
+          <div>
+            <nav class=" position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#work-section" class="nav-link">Projects</a></li>
+                <li><a href="#process-section" class="nav-link">Process</a></li>
+                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                <li><a href="#services-section" class="nav-link">Services</a></li>
+
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
+                <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                <li class="cta"><a href="#contact-section" class="nav-link"><span class="border bg-danger rounded text-white border-danger">Contact</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+  {% block content %}{% endblock content %}
+
+
+    <footer class="footer-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+          </div>
+
+          <div class="col-md-3 ml-auto">
+            <h3>Links</h3>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#home-section" class="smoothscroll">Home</a></li>
+              <li><a href="#work-section" class="smoothscroll">Projects</a></li>
+              <li><a href="#process-section" class="smoothscroll">Process</a></li>
+              <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
+              <li><a href="#services-section" class="smoothscroll">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Subscribe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
+            <form action="#">
+              <div class="d-flex mb-5">
+                <input type="text" class="form-control rounded-0" placeholder="Email">
+                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+
+      </div>
+    </footer>
+
+
+
+  </div> <!-- .site-wrap -->
+
+  <script src="{% static "home/js/jquery-3.3.1.min.js" %}"></script>
+  <script src="{% static "home/js/jquery-ui.js" %}"></script>
+  <script src="{% static "home/js/popper.min.js" %}"></script>
+  <script src="{% static "home/js/bootstrap.min.js" %}"></script>
+  <script src="{% static "home/js/owl.carousel.min.js" %}"></script>
+  <script src="{% static "home/js/jquery.easing.1.3.js" %}"></script>
+  <script src="{% static "home/js/aos.js" %}"></script>
+  <script src="{% static "home/js/jquery.fancybox.min.js" %}"></script>
+  <script src="{% static "home/js/jquery.waypoints.min.js" %}"></script>
+  <script src="{% static "home/js/jquery.animateNumber.min.js" %}"></script>
+  <script src="{% static "home/js/jquery.sticky.js" %}"></script>
+  <script src="{% static "home/js/main.js" %}"></script>
+
+
+  </body>
+</html>
