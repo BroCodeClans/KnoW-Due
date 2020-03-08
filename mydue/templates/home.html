@@ -53,14 +53,14 @@
 
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html" class="text-uppercase">Expert</a></div>
+          <div class="site-logo"><a href="index.html" class="text-uppercase">Know Due</a></div>
           <div>
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
                 <li><a href="{% url 'dash' %}" class="nav-link">DashBoard</a></li>
-                <li><a href="#process-section" class="nav-link">Process</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                <li><a href="{% url 'register' %}" class="nav-link">SignUp</a></li>
+                <li><a href="{% url 'login' %}" class="nav-link">Login</a></li>
                 <li><a href="#services-section" class="nav-link">Services</a></li>
 
               </ul>
@@ -88,23 +88,18 @@
             <div class="owl-carousel slide-one-item-alt-text">
               <div class="slide-text">
                 <h1>We Do Awesome Things</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                <p class="mb-5">Manage each and everyone of your subscriptions, services, and paid products and properties with a single portal</p>
+                <p><a href="{% url 'register' %}" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
               </div>
               <div class="slide-text">
-                <h1>Welcome</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                <h1>Zero Fuzz</h1>
+                <p class="mb-5">Zero fuzz over monthly payments and searching your archives for invoices, warranty cards and so on.</p>
+                <p><a href="{% url 'register' %}" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
               </div>
               <div class="slide-text">
-                <h1>High Quality Website Templates</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
-              </div>
-              <div class="slide-text">
-                <h1>We do things right.</h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                <h1>Presenting Know-Due</h1>
+                <p class="mb-5">One app to find them all,  one app to govern them , one app to settle them all, and one to celebrate them.</p>
+                <p><a href="{% url 'register' %}" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
               </div>
             </div>
 
@@ -133,8 +128,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
-            <h2 class="section-title">Our Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+            <h2 class="section-title">Our Features</h2>
+            <p><ul><li>Parse your emails and messages, extract the juicy stuff</li><li>Combine all services and subscriptions into one portal for payment and viewing</li><li>Notify users of dues and recommend better services when possible
+</li></ul></p>
           </div>
         </div>
 
@@ -189,70 +185,9 @@
 
     </div>
 
-    <div class="pricing-wrap bg-primary pricing-counter" id="pricing-section" data-aos="fade">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7 text-center">
-            <h2 class="section-title mb-3 text-center text-white mx-auto">Choose Your Plan</h2>
-            <p class="mb-5 section-desc">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+    
 
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row no-gutters">
-        <div class="col-lg-4">
-          <div class="pricing">
-            <h3>Starters</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="price">
-              <span>Starting at</span>
-              <strong>$<em class="number" data-number="7">0</em></strong>
-              <span>Per Month</span>
-            </div>
-
-            <p class="description-2 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum enim nobis aspernatur saepe dolores?</p>
-
-            <p><a href="#" target="_blank" class="btn btn-outline-primary py-3 px-5">Get Started</a></p>
-
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="pricing pricing-popular">
-            <h3>Premium</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="price">
-              <span>Starting at</span>
-              <strong>$<em class="number" data-number="75">0</em></strong>
-              <span>Per Month</span>
-            </div>
-
-            <p class="description-2 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum enim nobis aspernatur saepe dolores?</p>
-
-            <p><a href="#" target="_blank" class="btn  btn-outline-danger py-3 px-5">Get Started</a></p>
-
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="pricing">
-            <h3>Enterprise</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="price">
-              <span>Starting at</span>
-              <strong>$<em class="number" data-number="390">0</em></strong>
-              <span>Per Month</span>
-            </div>
-
-            <p class="description-2 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum enim nobis aspernatur saepe dolores?</p>
-
-            <p><a href="#" target="_blank" class="btn btn-outline-primary py-3 px-5">Get Started</a></p>
-
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
 
     <div class="site-section"  data-aos="fade">
